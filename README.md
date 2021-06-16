@@ -12,7 +12,7 @@ kafka-server-start.bat D:\kafka_2.12-2.7.0\config\server.properties
 kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 -topic kafka-prod
 
 # Produce a message 
-kafka-console-producer.bat --broker-list localhost:8080 --kafka-prod
+kafka-console-producer.bat --broker-list localhost:9091--kafka-prod
 
 # Consume a message
-kafka-console-consumer.bat --bootstrap-server localhost:8080 --topic kafka-prod
+kafka-console-consumer.bat --bootstrap-server localhost:9091 --topic kafka-prod
